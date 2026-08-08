@@ -1,4 +1,4 @@
-*,
+*,  /*Сверился с валидатором */
 *::before,
 *::after {
   box-sizing: border-box;
@@ -95,18 +95,14 @@ ol {
   height: 298px;
   overflow: auto;
   position: relative;
-}
-
-.content__list-container:last-child {
-  gap: 30px;
+  gap: 30px; /* Перенес gap */
 }
 
 .content__video-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  width: 390px;
-  height: 103px;
+  width: 390px; /*Убрал высоту */
 }
 
 .content__video-card-description-container {
@@ -126,7 +122,6 @@ ol {
   font-size: 75px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0%;
   line-height: 94%;
   margin-bottom: 22px;
 }
@@ -152,7 +147,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-skip-ink: none; /* Совсем забыл поменять свойство, убрал line-offset */
 }
 
 .content__card-link:focus {
@@ -198,8 +193,7 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  height: 54px;
-}
+} /* Убрал высоту */
 
 .search-form__textfield {
   font-family: inherit;
