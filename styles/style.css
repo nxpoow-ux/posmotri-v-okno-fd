@@ -285,10 +285,31 @@ ol {
   font-weight: bold;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__submit-button {
   height: 34px;
   width: 194px;
   align-self: flex-end;
+}
+
+.more-button {
+  width: 100%;
 }
 
 .result__video-container {
